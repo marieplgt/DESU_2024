@@ -20,15 +20,6 @@ import mne
 
 import ants
 
-from mne_bids import (
-    BIDSPath,
-    print_dir_tree,
-    write_raw_bids,
-    write_anat,
-    read_raw_bids,
-    find_matching_paths,
-    get_entity_vals,
-)
 
 
 # %% Paths

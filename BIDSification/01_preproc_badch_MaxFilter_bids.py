@@ -182,25 +182,7 @@ raw_visualBad.filter(1, None).plot(theme="dark")
 
 # %% Discard channels marked as bads
 
-visual_bads = [
-'MEG0332',
-'MEG0413',
-'MEG0733',
-'MEG0642',
-'MEG0643',
-'MEG1022',
-'MEG1143',
-'MEG1332',
-'MEG1443',
-'MEG1822',
-'MEG2122',
-'MEG2623',
-'MEG0811',
-'MEG0521',
-'MEG0341',
-'MEG2021',
-]
-# visual_bads = raw_visualBad.info["bads"]
+visual_bads = raw_visualBad.info["bads"]
 
 raw_autoBad.info["bads"] = raw_autoBad.info["bads"] + visual_bads
 
